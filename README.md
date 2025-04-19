@@ -88,6 +88,14 @@ Username: snazzy
 Password: paws123
 
 
+The live version of the Snazzy Paws Grooming website can be accessed at:  
+**https://snazzypawsweb.vercel.app/**
+
+The source code and all project files are available on GitHub at:  
+**https://github.com/JorgeGdev/snazzypawsweb**
+
+
+
 
 
 >>>>>>> f9ef603 (Initial commit - Snazzy Paws final version for Assessment 3)
