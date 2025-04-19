@@ -1,0 +1,7 @@
+<Files "roster.html">
+    AuthType Basic
+    AuthName "Staff Only Area"
+    AuthUserFile "/home/your_username/public_html/.htpasswd"
+    Require valid-user
+  </Files>
+  

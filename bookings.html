@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Snazzy Paws Grooming</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="Jorge Guerrero" />
+    <meta name="keywords" content="dog grooming, Snazzy Paws, Hamilton, pet salon, grooming salon" />
+    <meta name="description" content="Learn the story behind Snazzy Paws Grooming, a professional dog grooming salon in Hamilton. Discover how it all began with a love for dogs." />
+
+    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+    data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true"
+    tabindex="0"
+  >
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+
+    <!-- Site Header -->
+    <header class="header-wrap">
+      <div class="header-logo">
+        <a class="site-logo" href="index.html">
+          <img src="images/logo.png" alt="logo" />
+        </a>
+      </div>
+
+      <nav class="header-nav-wrap">
+        <nav class="header-nav-wrap">
+          <ul id="navbar" class="header-main-nav">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="bookings.html" class="nav-link active">Bookings</a></li>
+            <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+            <li><a href="roster.html" class="nav-link">Roster</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+
+        <ul class="header-social">
+          <li>
+            <a
+              class="social-icon"
+              href="https://www.facebook.com/OpenPolytechnic/"
+              target="_blank"
+            >
+              <span
+                class="iconify text-primary_1"
+                data-icon="la:facebook-f"
+              ></span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-icon"
+              href="https://www.instagram.com/OpenPolytechnic/"
+              target="_blank"
+              ><span
+                class="iconify text-primary_1"
+                data-icon="la:instagram"
+              ></span
+            ></a>
+          </li>
+          <li>
+            <a
+              class="social-icon"
+              href="https://www.youtube.com/@OpenPolytechnic"
+              target="_blank"
+              ><span class="iconify text-primary_1" data-icon="la:youtube"></span
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+    </header>
+    <!-- End Site Header -->
+     
+    <!-- Booking Section -->
+    <section id="booking" class="booking-wrap">
+      <div class="container">
+        <div class="row">
+          <!-- Booking Form -->
+          <div class="col-md-6">
+            <h2>Book Your Appointment</h2>
+            <form id="bookingForm">
+              <div class="mb-3">
+                <label for="ownerName" class="form-label">Owner's Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="ownerName"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="contactInfo" class="form-label"
+                  >Contact Information</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contactInfo"
+                  placeholder="Enter your email or phone number"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="petName" class="form-label">Pet Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="petName"
+                  placeholder="Enter your pet's name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="petBreed" class="form-label">Dog Breed</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="petBreed"
+                  placeholder="Enter your dog's breed"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="petAge" class="form-label">Dog Age</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="petAge"
+                  placeholder="Enter your dog's age"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="bookingDate" class="form-label">Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="bookingDate"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="service" class="form-label">Service</label>
+                <select class="form-select" id="service" required>
+                  <option value="">Select a service</option>
+                  <option value="grooming">Grooming</option>
+                  <option value="veterinary">Veterinary Checkup</option>
+                  <option value="boarding">Boarding</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="extraPackage" class="form-label"
+                  >Additional Service or Extra Package</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="extraPackage"
+                  placeholder="Enter any extra services or packages"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="comments" class="form-label"
+                  >Comments or Special Instructions</label
+                >
+                <textarea
+                  class="form-control"
+                  id="comments"
+                  rows="3"
+                  placeholder="Enter any special instructions"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn booking-btn">Book Now</button>
+            </form>
+          </div>
+
+          <!-- Booking Policies -->
+          <div class="col-md-6 pt-3 mt-4">
+            <h2>Booking Policies</h2>
+            <div class="booking-policies">
+              <ul>
+                <li>Bookings must be made at least 24 hours in advance.</li>
+                <li>Cancellations within 12 hours will not be refunded.</li>
+                <li>
+                  Please ensure that all provided information is accurate and up
+                  to date.
+                </li>
+                <li>All services are subject to availability.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Booking Section -->
+
+
+   <!--Main Footer-->
+   <footer class="main-footer" style="background: #141414">
+    <!--Widgets Section-->
+    <div class="widgets-section container">
+      <div class="row">
+        <!--Footer Column-->
+        <div class="footer-column col-lg-3 col-md-3 col-sm-12">
+          <div class="footer-widget about-widget">
+            <h4>About Snazzy Paws Grooming</h4>
+            <p>
+              Snazzy Looks, Wagging Tails! The Ultimate Spa Experience for
+              Your Pup!
+            </p>
+            <ul class="contact-info-list">
+              <li>
+                <a href="contact.html"
+                  ><span
+                    class="iconify text-primary_1"
+                    data-icon="icomoon-free:location"
+                  ></span
+                  >123 Grey Street, Hamilton East, Hamilton</a
+                >
+              </li>
+              <li>
+                <a href="contact.html"
+                  ><span
+                    class="iconify text-primary_1"
+                    data-icon="icomoon-free:phone"
+                  ></span
+                  >+64 7 555 1234</a
+                >
+              </li>
+              <li>
+                <a href="contact.html"
+                  ><span
+                    class="iconify text-primary_1"
+                    data-icon="icomoon-free:mail3"
+                  ></span
+                  >contact@snazzypaws.co.nz</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--Footer Column-->
+        <div class="footer-column col-lg-3 col-md-3 col-sm-12">
+          <div class="footer-widget links-widget">
+            <h4>Useful links</h4>
+            <div class="widget-content">
+              <ul class="list">
+                <li><a href="about.html">About me</a></li>
+                <li><a href="gallery.html">My gallery</a></li>
+                <li><a href="services.html">My services </a></li>
+                <li><a href="contact.html">Contact me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--Footer Column-->
+        <div class="footer-column col-lg-3 col-md-3 col-sm-12">
+          <div class="footer-widget time-widget">
+            <h4>Working time</h4>
+            <div class="widget-content">
+              <ul class="list">
+                <li><a href="bookings.html">Mon / no work on this day</a></li>
+                <li><a href="bookings.html">Tue - Fri / 10:00 - 9:00pm</a></li>
+                <li><a href="bookings.html">Sat / 10:00 - 10:00pm</a></li>
+                <li><a href="bookings.html">Sun / 10:00 - 6:00pm</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--Footer Column-->
+        <div class="footer-column col-lg-3 col-md-3 col-sm-12">
+          <div class="footer-widget newsletter-widget">
+            <h4>Get newsletter</h4>
+            <p>Get updates & exclusive deals subscribe now!</p>
+            <form>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="Your email address"
+                  required=""
+                />
+                <a href=""
+                  ><span
+                    class="iconify text-primary_1"
+                    data-icon="la:telegram-plane"
+                  ></span
+                ></a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer Bottom-->
+    <div class="footer-bottom">
+      <div class="copyright container">
+        @ 2025
+        <a class="text-primary" href="https://jorgegdev.com/" target="_blank"
+          >Pixel Perfect Web Studio - JorgeGDev</a
+        >. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <!-- End Main Footer -->
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
